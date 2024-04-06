@@ -1,3 +1,7 @@
+"""
+Introduction to classes
+"""
+
 class Weapon:
     def __init__(self, name, material, strength=100) -> None:
         self.name = name
