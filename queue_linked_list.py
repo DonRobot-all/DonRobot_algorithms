@@ -1,5 +1,5 @@
 class Node:
-    def __init__(self, value, left=None, right=None) -> None:
+    def __init__(self, value):
         self.value = value
         self.next = None
 
@@ -26,9 +26,12 @@ class Stack:
         if self.right is None:
             self.right = node
             self.left = node
+            print(self.right.next, self.left.next)
         else:
+            # print(self.right.next, self.left.next)
             self.left.next = node
             self.left = node
+            print(self.right.next.value, self.left.next)
         self.length += 1
 
     def size(self):
